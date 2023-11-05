@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/MendeleevTable/static/css/main.3d22d908.css",
+    "main.js": "/MendeleevTable/static/js/main.9d4b7ab0.js",
+    "static/media/JetBrainsMono-Regular.ttf": "/MendeleevTable/static/media/JetBrainsMono-Regular.93b40005892466035ab0.ttf",
+    "static/media/icon-halflife-2.png": "/MendeleevTable/static/media/icon-halflife-2.3afb389ce78bd8a33e4b.png",
+    "static/media/SFUIText-Bold.ttf": "/MendeleevTable/static/media/SFUIText-Bold.7ae65fe927ab841bb1b6.ttf",
+    "static/media/SFUIText-Light.ttf": "/MendeleevTable/static/media/SFUIText-Light.f129384d3610a7da5fb5.ttf",
+    "static/media/SFUIText-Medium.ttf": "/MendeleevTable/static/media/SFUIText-Medium.9821d3350033dd22cbc7.ttf",
+    "static/media/SFUIText-Regular.ttf": "/MendeleevTable/static/media/SFUIText-Regular.44da36462f52dd1140b3.ttf",
+    "static/media/loader40-40.svg": "/MendeleevTable/static/media/loader40-40.1ed1defa40fdd4c12c5a.svg",
+    "static/media/loader14-14.svg": "/MendeleevTable/static/media/loader14-14.6d01d3ab412d80c6003f.svg",
+    "static/media/stop.svg": "/MendeleevTable/static/media/stop.b0948d3c9b02751f48e3.svg",
+    "index.html": "/MendeleevTable/index.html",
+    "static/media/radio.svg": "/MendeleevTable/static/media/radio.540202203dff731e6064.svg",
+    "static/media/checked.svg": "/MendeleevTable/static/media/checked.7d5b785d8ded556f735c.svg",
+    "static/media/arrow-bottom.svg": "/MendeleevTable/static/media/arrow-bottom.ab2a4384fe0f3023570c.svg",
+    "main.3d22d908.css.map": "/MendeleevTable/static/css/main.3d22d908.css.map",
+    "main.9d4b7ab0.js.map": "/MendeleevTable/static/js/main.9d4b7ab0.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3d22d908.css",
+    "static/js/main.9d4b7ab0.js"
+  ]
+}
