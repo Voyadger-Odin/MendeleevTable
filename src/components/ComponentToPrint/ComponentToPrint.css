@@ -1,0 +1,43 @@
+
+
+.component-to-print{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: calc(100vw / 100);
+}
+
+/* Typography */
+.component-to-print h1, h2, h3, h4, h5, h6{
+    font-weight: 600;
+    font-style: normal;
+}
+
+.component-to-print h1{
+    font-size: calc(100vw / 100);
+    line-height: calc(100vw / 100);
+}
+.component-to-print h2{
+    font-size: 30px;
+    line-height: 32px;
+}
+.component-to-print h3{
+    font-size: 26px;
+    line-height: 28px;
+}
+.component-to-print h4{
+    font-size: 22px;
+    line-height: 24px;
+}
+.component-to-print h5{
+    font-size: 18px;
+    line-height: 20px;
+}
+.component-to-print h6{
+    font-size: 14px;
+    line-height: 16px;
+}
+/* End typography */

@@ -1,0 +1,120 @@
+
+
+:root{
+    --background-color: black;
+    --text-color: #eee;
+    --element-size: 4vw;
+    --element-padding: 5px;
+    --element-real: calc(var(--element-size) + var(--element-padding) * 2);
+    --border-radius: 5px;
+    --legend-scale: 1.5;
+    --table-padding: 15px;
+
+
+
+    --color-nonmetal: #79ad26;
+    --color-nonmetal-hover: #6c9a24;
+
+    --color-alkali-metal: #d04949;
+    --color-alkali-metal-hover: #c54646;
+
+    --color-alkaline-earth-metal: #da9211;
+    --color-alkaline-earth-metal-hover: #c78713;
+
+    --color-transition-metal: #60b9de;
+    --color-transition-metal-hover: #7ab0c7;
+
+    --color-noble-gas: #e889d5;
+    --color-noble-gas-hover: #e377cd;
+
+    --color-lanthanide: #85cbb0;
+    --color-lanthanide-hover: #85cbb0;
+
+
+
+
+    --numbers-top-size: calc(var(--element-real) / 5);
+    --numbers-left-size: calc(var(--element-real) / 5);
+
+}
+
+
+
+.Mendeleev-table{
+    width: calc(var(--element-real) * 18);
+    position: relative;
+    padding: var(--table-padding);
+}
+
+.elements{
+    position: relative;
+}
+
+
+/* Table space */
+.cell-space-10{
+    width: calc(var(--element-real) * 10);
+}
+.cell-space-16{
+    width: calc(var(--element-real) * 16);
+}
+/* End table space */
+
+.row{
+    display: flex !important;
+    flex-direction: row !important;
+}
+
+/* Numbers */
+.numbers{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: #777;
+    font-size: calc(var(--element-real) / 7);
+    pointer-events: none;
+}
+
+.numbers-top{
+    position: absolute;
+    width: var(--element-real);
+    height: var(--numbers-top-size);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.numbers-left{
+    position: absolute;
+    width: var(--numbers-left-size);
+    height: var(--element-real);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* End numbers */
+
+
+
+/* Border radius */
+.br{
+    border-radius: var(--border-radius);
+}
+.br-top-left{
+    border-radius: var(--border-radius) 0 0 0;
+}
+.br-top-right{
+    border-radius: 0 var(--border-radius) 0 0;
+}
+.br-top-left-right{
+    border-radius: var(--border-radius) var(--border-radius) 0 0;
+}
+.br-bottom-left{
+    border-radius: 0 0 0 var(--border-radius);
+}
+.br-bottom-right{
+    border-radius: 0 0 var(--border-radius) 0;
+}
+/* End border radius */

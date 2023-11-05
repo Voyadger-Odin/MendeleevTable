@@ -1,0 +1,90 @@
+
+
+.legend{
+    position: absolute;
+    width: calc(var(--element-real) * 10 - var(--element-padding) * 5 * 2);
+    height: calc(var(--element-real) * 2);
+    top: calc(var(--element-real) * 1 + var(--table-padding));
+    left: calc(var(--element-real) * 2 + var(--table-padding));
+    padding: 0 calc(var(--element-padding) * 5);
+}
+.legend-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.legend-block{
+    display: flex;
+    flex-direction: row;
+}
+
+.element-legend{
+    width: calc(var(--element-size) * var(--legend-scale));
+    height: calc(var(--element-size) * var(--legend-scale));
+}
+
+.element-legend>* .symbol{
+    font-size: calc(var(--element-size) * 0.45 * var(--legend-scale));
+    font-weight: 800;
+}
+
+.legend-description{
+    margin-left: 10px;
+    font-size: calc(var(--element-size) * 0.18);
+}
+
+.legend-description>table{
+    border-collapse: collapse;
+    color: #aaa;
+}
+.legend-description>table>tbody>tr>td{
+    padding-top: 5px;
+}
+.legend-element-value{
+    padding-left: 20px;
+}
+
+
+/* Legend explanation */
+.legend-explanation{
+    margin-right: 60px;
+    margin-top: 11px;
+    position: relative;
+}
+
+.legend-explanation>table{
+    border-collapse: collapse;
+    text-align: end;
+    font-weight: 300;
+    font-size: calc(var(--element-size) * 0.25);
+}
+.legend-explanation>table>tbody>tr>td{
+    padding: calc(var(--element-size) * 0.03) 0;
+}
+
+.legend-explanation-canvas{
+    position: absolute;
+    top: -10px;
+    left: 100%;
+}
+/* End legend explanation */
+
+
+.element-legend{
+    width: calc(var(--element-size) * var(--legend-scale));
+    height: calc(var(--element-size) * var(--legend-scale));
+}
+
+.element-legend>* .symbol{
+    font-size: calc(var(--element-size) * 0.45 * var(--legend-scale));
+    font-weight: 800;
+}
+
+.element-legend>* .weight{
+    font-size: calc(calc(var(--element-size) / 8) * 0.8 * var(--legend-scale));
+}
+
+.element-legend>* .name{
+    margin-top: 5px;
+    font-size: calc(calc(var(--element-size) / 6) * 0.8 * var(--legend-scale));
+}

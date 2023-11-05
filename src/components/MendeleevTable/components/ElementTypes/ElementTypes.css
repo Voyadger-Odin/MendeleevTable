@@ -1,0 +1,16 @@
+
+.elemen_types_table{
+    border-collapse: collapse;
+}
+
+.elemen_types_table>tbody>tr>td{
+    padding-bottom: 10px;
+    padding-right: 50px;
+}
+
+.element-types-color{
+    width: 50px;
+    height: 12px;
+    display: inline-block;
+    margin-right: 10px;
+}

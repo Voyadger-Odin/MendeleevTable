@@ -1,0 +1,45 @@
+
+
+.container-atom {
+    width:100%;
+    height:100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    z-index: 1;
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-atom:not([open]){
+    display: none;
+}
+.container-atom[closing]{
+    pointer-events: none;
+    animation: fade-out 500ms forwards, scale-down 500ms forwards;
+}
+.container-atom[closing] .loader-atom{
+    animation: fade-out 500ms forwards, scale-down 500ms forwards;
+}
+
+.loader-atom{
+    animation: loader 10s infinite linear;
+    background: radial-gradient(circle at 50% 50%, #95006A 0%, rgba(22, 125, 255, 0) calc(0% + 130px)) no-repeat border-box border-box rgba(0, 0, 0, 0);
+}
+
+.s0{
+    fill:none;
+    stroke: #95006A;
+    stroke-width: 2;
+}
+.core {
+    fill: url(#Rg);
+}
+
+.circ {
+    fill: url(#Rg);
+}

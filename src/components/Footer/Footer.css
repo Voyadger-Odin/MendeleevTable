@@ -1,0 +1,32 @@
+
+/* Footer */
+footer{
+    width: 100%;
+    margin-top: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+    line-height: 30px;
+}
+
+.footer-top-line{
+    width: 40%;
+    height: 10px;
+    margin-top: 50px;
+    border-top: 1px solid var(--gray-2);
+}
+
+.footer-link{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+/* Dark theme */
+.theme-dark>* .footer-top-line{
+    border-top: 1px solid var(--gray-12);
+}
+/* End dark theme */
+/* End footer */

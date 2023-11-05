@@ -1,0 +1,509 @@
+
+:root{
+    /* Colors */
+    /* Gray */
+    --gray-14: #FFFFFF;
+    --gray-13: #F7F8FA;
+    --gray-12: #EBECF0;
+    --gray-11: #DFE1E5;
+    --gray-10: #D3D5DB;
+    --gray-9: #C9CCD6;
+    --gray-8: #A8ADBD;
+    --gray-7: #818594;
+    --gray-6: #6C707E;
+    --gray-5: #5A5D6B;
+    --gray-4: #494B57;
+    --gray-3: #383A42;
+    --gray-2: #27282E;
+    --gray-1: #000000; /* Primary */
+
+    /* Blue */
+    --blue-13: #F5F8FE;
+    --blue-12: #EDF3FF;
+    --blue-11: #D4E2FF;
+    --blue-10: #C2D6FC;
+    --blue-9: #A0BDF8;
+    --blue-8: #88ADF7;
+    --blue-7: #709CF5;
+    --blue-6: #588CF3;
+    --blue-5: #4682FA;
+    --blue-4: #3574F0; /* Primary */
+    --blue-3: #3369D6;
+    --blue-2: #315FBD;
+    --blue-1: #2E55A3;
+
+    /* Green */
+    --green-11: #F2FCF3;
+    --green-10: #E6F7E9;
+    --green-9: #C5E5CC;
+    --green-8: #AFDBB8;
+    --green-7: #89C398;
+    --green-6: #55A76A;
+    --green-5: #369650;
+    --green-4: #208A3C; /* Primary */
+    --green-3: #1F8039;
+    --green-2: #1F7536;
+    --green-1: #1E6B33;
+
+    /* Red */
+    --red-11: #FFF7F7;
+    --red-10: #FFF2F3;
+    --red-9: #FAD4D8;
+    --red-8: #F2B6BB;
+    --red-7: #ED99A1;
+    --red-6: #E46A76;
+    --red-5: #E55765;
+    --red-4: #DB3B4B; /* Primary */
+    --red-3: #CC3645;
+    --red-2: #BC303E;
+    --red-1: #AD2B38;
+
+    /* Yellow */
+    --yellow-10: #FFFAEB;
+    --yellow-9: #FFF6DE;
+    --yellow-8: #FFF1D1;
+    --yellow-7: #FEE6B1;
+    --yellow-6: #FED277;
+    --yellow-5: #FDBD3D;
+    --yellow-4: #FFAF0F; /* Primary */
+    --yellow-3: #DF9303;
+    --yellow-2: #C27D04;
+    --yellow-1: #A46704;
+
+    /* Orange */
+    --orange-9: #FFF4EB;
+    --orange-8: #FCE6D6;
+    --orange-7: #F9D2B6;
+    --orange-6: #F2B181;
+    --orange-5: #EC8F4C;
+    --orange-4: #E56D17; /* Primary */
+    --orange-3: #CE6117;
+    --orange-2: #B85516;
+    --orange-1: #A14916;
+
+    /* Purple */
+    --purple-9: #FAF5FF;
+    --purple-8: #EFE5FF;
+    --purple-7: #DCCBFB;
+    --purple-6: #BFA1F8;
+    --purple-5: #A177F4;
+    --purple-4: #834DF0; /* Primary */
+    --purple-3: #7444D4;
+    --purple-2: #643CB8;
+    --purple-1: #55339C;
+
+    /* Teal */
+    --teal-9: #F2FCFC;
+    --teal-8: #DAF4F5;
+    --teal-7: #B6E4E5;
+    --teal-6: #7BCCCF;
+    --teal-5: #3FB3B8;
+    --teal-4: #039BA1; /* Primary */
+    --teal-3: #058B90;
+    --teal-2: #077A7F;
+    --teal-1: #096A6E;
+
+    /* Gradient */
+    --gradient-1: linear-gradient(90deg, rgba(245, 212, 193, 0.00) 0%, #F5D4C1 21.18%, rgba(245, 212, 193, 0.00) 100%);
+    --gradient-2: linear-gradient(90deg, rgba(238, 226, 189, 0.00) 0%, #EEE2BD 21.18%, rgba(238, 226, 189, 0.00) 100%);
+    --gradient-3: linear-gradient(90deg, rgba(219, 231, 201, 0.00) 0%, #DBE7C9 21.18%, rgba(219, 231, 201, 0.00) 100%);
+    --gradient-4: linear-gradient(90deg, rgba(204, 235, 209, 0.00) 0%, #CCEBD1 21.18%, rgba(204, 235, 209, 0.00) 100%);
+    --gradient-5: linear-gradient(90deg, rgba(190, 228, 225, 0.00) 0%, #BEE4E1 21.18%, rgba(190, 228, 225, 0.00) 100%);
+    --gradient-6: linear-gradient(90deg, rgba(202, 223, 234, 0.00) 0%, #CADFEA 21.18%, rgba(202, 223, 234, 0.00) 100%);
+    --gradient-7: linear-gradient(90deg, rgba(219, 216, 239, 0.00) 0%, #DBD8EF 21.18%, rgba(219, 216, 239, 0.00) 100%);
+    --gradient-8: linear-gradient(90deg, rgba(223, 204, 244, 0.00) 0%, #DFCCF4 21.18%, rgba(223, 204, 244, 0.00) 100%);
+    --gradient-9: linear-gradient(90deg, rgba(238, 215, 245, 0.00) 0%, #EED7F5 21.18%, rgba(238, 215, 245, 0.00) 100%);
+    /* End Colors */
+
+    --tree-padding-left: 20;
+}
+
+.theme-dark{
+    /* Colors */
+    /* Gray */
+    --gray-14: #FFFFFF;
+    --gray-13: #F0F1F2;
+    --gray-12: #DFE1E5;
+    --gray-11: #CED0D6;
+    --gray-10: #B4B8BF;
+    --gray-9: #9DA0A8;
+    --gray-8: #868A91;
+    --gray-7: #6F737A;
+    --gray-6: #5A5D63;
+    --gray-5: #4E5157;
+    --gray-4: #43454A;
+    --gray-3: #393B40;
+    --gray-2: #2B2D30;
+    --gray-1: #111111; /* Primary */
+
+    /* Blue */
+    --blue-11: #99BBFF;
+    --blue-10: #83ACFC;
+    --blue-9: #6B9BFA;
+    --blue-8: #548AF7;
+    --blue-7: #467FF2;
+    --blue-6: #3574F0; /* Primary */
+    --blue-5: #366ACF;
+    --blue-4: #375FAD;
+    --blue-3: #35538F;
+    --blue-2: #2E436E;
+    --blue-1: #25324D;
+
+    /* Green */
+    --green-11: #D4FAD7;
+    --green-10: #B9EBBD;
+    --green-9: #A0DBA5;
+    --green-8: #89CC8E;
+    --green-7: #73BD79;
+    --green-6: #5FAD65; /* Primary */
+    --green-5: #57965C;
+    --green-4: #4E8052;
+    --green-3: #436946;
+    --green-2: #375239;
+    --green-1: #253627;
+
+    /* Red */
+    --red-11: #FAE3DE;
+    --red-10: #F7CCC6;
+    --red-9: #F2B1AA;
+    --red-8: #EB938D;
+    --red-7: #E37774;
+    --red-6: #DB5C5C; /* Primary */
+    --red-5: #BD5757;
+    --red-4: #9C4E4E;
+    --red-3: #7A4343;
+    --red-2: #5E3838;
+    --red-1: #402929;
+
+    /* Yellow */
+    --yellow-11: #FFF6BD;
+    --yellow-10: #FCEBA4;
+    --yellow-9: #F7DE8B;
+    --yellow-8: #F5D273;
+    --yellow-7: #F2C55C; /* Primary */
+    --yellow-6: #D6AE58;
+    --yellow-5: #BA9752;
+    --yellow-4: #9E814A;
+    --yellow-3: #826A41;
+    --yellow-2: #5E4D33;
+    --yellow-1: #3D3223;
+
+    /* Orange */
+    --orange-11: #FFDFC7;
+    --orange-10: #FACEAF;
+    --orange-9: #F5BD98;
+    --orange-8: #F0AC81;
+    --orange-7: #E5986C;
+    --orange-6: #E08855; /* Primary */
+    --orange-5: #C77D55;
+    --orange-4: #A36B4E;
+    --orange-3: #825845;
+    --orange-2: #614438;
+    --orange-1: #45322B;
+
+    /* Purple */
+    --purple-11: #E4CEFF;
+    --purple-10: #D4B8F9;
+    --purple-9: #C4A0F3;
+    --purple-8: #B589EC;
+    --purple-7: #A571E6;
+    --purple-6: #955AE0; /* Primary */
+    --purple-5: #8150BE;
+    --purple-4: #6C469C;
+    --purple-3: #583D7A;
+    --purple-2: #433358;
+    --purple-1: #2F2936;
+
+    /* Teal */
+    --teal-11: #B9EBE6;
+    --teal-10: #9BDDD6;
+    --teal-9: #7DCEC5;
+    --teal-8: #60C0B5;
+    --teal-7: #42B1A4;
+    --teal-6: #24A394; /* Primary */
+    --teal-5: #238E82;
+    --teal-4: #21786F;
+    --teal-3: #20635D;
+    --teal-2: #1E4D4A;
+    --teal-1: #1D3838;
+
+    /* Gradient */
+    --gradient-1: linear-gradient(90deg, rgba(101, 75, 64, 0.00) 0%, #654B40 21.18%, rgba(101, 75, 64, 0.00) 100%);
+    --gradient-2: linear-gradient(90deg, rgba(83, 76, 51, 0.00) 0%, #534C33 21.18%, rgba(83, 76, 51, 0.00) 100%);
+    --gradient-3: linear-gradient(90deg, rgba(69, 80, 56, 0.00) 0%, #455038 21.18%, rgba(69, 80, 56, 0.00) 100%);
+    --gradient-4: linear-gradient(90deg, rgba(62, 85, 64, 0.00) 0%, #3E5540 21.18%, rgba(62, 85, 64, 0.00) 100%);
+    --gradient-5: linear-gradient(90deg, rgba(29, 71, 68, 0.00) 0%, #1D4744 21.35%, rgba(29, 71, 68, 0.00) 100%);
+    --gradient-6: linear-gradient(90deg, rgba(49, 81, 95, 0.00) 0%, #31515F 21.18%, rgba(49, 81, 95, 0.00) 100%);
+    --gradient-7: linear-gradient(90deg, rgba(52, 76, 125, 0.00) 0%, #344C7D 21.18%, rgba(52, 76, 125, 0.00) 100%);
+    --gradient-8: linear-gradient(90deg, rgba(79, 62, 101, 0.00) 0%, #4F3E65 21.18%, rgba(79, 62, 101, 0.00) 100%);
+    --gradient-9: linear-gradient(90deg, rgba(93, 53, 74, 0.00) 0%, #5D354A 21.18%, rgba(93, 53, 74, 0.00) 100%);
+    /* End Colors */
+}
+
+/* Fonts */
+@font-face {
+    font-family: "SF UI Text";
+    font-weight: 300;
+    src: url("../fonts/SanFrancisco/SFUIText-Light.ttf");
+}
+
+@font-face {
+    font-family: "SF UI Text";
+    font-weight: 400;
+    src: url("../fonts/SanFrancisco/SFUIText-Regular.ttf");
+}
+
+@font-face {
+    font-family: "SF UI Text";
+    font-weight: 500;
+    src: url("../fonts/SanFrancisco/SFUIText-Medium.ttf");
+}
+
+@font-face {
+    font-family: "SF UI Text";
+    font-weight: 700;
+    src: url("../fonts/SanFrancisco/SFUIText-Bold.ttf");
+}
+
+@font-face {
+    font-family: "JetBrainsMono";
+    font-weight: 400;
+    src: url("../fonts/JetBrainsMono-2.304/fonts/ttf/JetBrainsMono-Regular.ttf");
+}
+/* End fonts */
+
+/* Animations */
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes fade-out {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+@keyframes slide-in {
+    0% {
+        transform: translateY(-10%);
+    }
+    100% {
+        transform: translateY(0%);
+    }
+}
+@keyframes slide-out {
+    0% {
+        transform: translateY(0%);
+    }
+    100% {
+        transform: translateY(-10%);
+    }
+}
+@keyframes scale-up {
+    0% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+@keyframes scale-down {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.1);
+    }
+}
+
+@keyframes loader {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+/* End animations */
+
+/* Scrollbar */
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}
+/*# sourceMappingURL=maps/style.css.map */
+
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: none;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #D9D9D9;
+    border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #7B7C7D;
+}
+
+    /* Dark theme */
+        /* Handle */
+        .theme-dark>* ::-webkit-scrollbar-thumb {
+            background: #48494B;
+        }
+
+        /* Handle on hover */
+        .theme-dark>* ::-webkit-scrollbar-thumb:hover {
+            background: #595A5C;
+        }
+    /* End dark theme */
+/* End scrollbar */
+
+
+* {
+}
+
+body{
+    box-sizing: border-box;
+    color: var(--gray-1);
+    background: var(--gray-14);
+    margin: 0;
+    padding: 0;
+    font-size: 13px;
+    font-family: "SF UI Text";
+    transition: .1s;
+}
+
+.theme-dark{
+    color: var(--gray-12);
+    background: var(--gray-1);
+}
+
+
+
+/* Typography */
+h1, h2, h3, h4, h5, h6{
+    font-weight: 600;
+    font-style: normal;
+}
+
+h1{
+    font-size: 34px;
+    line-height: 36px;
+}
+h2{
+    font-size: 30px;
+    line-height: 32px;
+}
+h3{
+    font-size: 26px;
+    line-height: 28px;
+}
+h4{
+    font-size: 22px;
+    line-height: 24px;
+}
+h5{
+    font-size: 18px;
+    line-height: 20px;
+}
+h6{
+    font-size: 14px;
+    line-height: 16px;
+}
+/* End typography */
+
+/* Hr */
+    hr{
+        height: 1px;
+        border: none;
+        background: var(--gray-8);
+    }
+
+    /* Dark theme */
+        .theme-dark>* hr{
+            background: var(--gray-4);
+        }
+    /* End dark theme */
+/* End hr */
+
+/* Code */
+    code{
+        font-family: 'JetBrainsMono';
+        background: var(--gray-12);
+        color: var(--gray-1);
+        padding: 6px 10px;
+        border-radius: 4px;
+    }
+
+    /* Dark theme */
+        .theme-dark>* code{
+            background: var(--gray-2);
+            color: var(--gray-12);
+        }
+    /* End dark theme */
+/* End code */
+
+.page{
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    padding-top: 40px;
+}
+
+
+/* Text bold */
+.tb{
+    font-weight: 500;
+}
+
+.gradient{
+    width: 500px;
+    height: 40px;
+    display: flex;
+    position: fixed;
+    align-items: center;
+    z-index: -1;
+}
+
+.logo{
+    width: 32px;
+    height: 32px;
+    display: inline;
+}
+
+.lead{
+    font-size: 1.25rem;
+    font-weight: 300;
+}
+
+.content-wrapper{
+    padding: 1.875rem 1.75rem;
+    width: 100%;
+    -webkit-flex-grow: 1;
+    flex-grow: 1;
+}

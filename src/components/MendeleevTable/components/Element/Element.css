@@ -1,0 +1,43 @@
+
+
+.element{
+    width: var(--element-size);
+    height: var(--element-size);
+    color: var(--text-color);
+    font-family: "SF UI Text";
+    padding: var(--element-padding);
+    transition: .3s;
+    cursor: pointer;
+}
+
+.elementData{
+    pointer-events: none;
+}
+
+.row-element{
+    justify-content: space-between;
+}
+
+.container{
+
+}
+
+.symbol{
+    font-size: calc(var(--element-size) * 0.45);
+    font-weight: 800;
+}
+
+.number{
+    font-size: calc(var(--element-size) / 5);
+}
+
+.weight{
+    font-size: calc(var(--element-size) / 7);
+    margin-top: 1px;
+    color: black;
+}
+
+.name{
+    font-size: calc(var(--element-size) / 6);
+    margin-top: 3px;
+}

@@ -1,0 +1,34 @@
+{
+  "Density_dimension": "g/l",
+
+  "number": "Number",
+  "symbol": "Symbol",
+  "name": "Name",
+  "series": "Chemical category",
+  "period": "Period",
+  "group": "Group",
+
+  "mass": "Mass",
+  "E-negativity": "E-negativity",
+  "Atomic radius": "Atomic radius",
+  "Half-life period": "Half-life period",
+  "Abundance in Earth crust": "Abundance in Earth crust",
+  "Abundance in Universe": "Abundance in Universe",
+
+  "Atomic weight": "Atomic weight",
+  "Melting point": "Melting point",
+  "Boiling point": "Boiling point",
+  "Half-life": "Half-life period",
+  "Density": "Density",
+
+  "nonmetal": "Nonmetal",
+  "alkali_metals": "Alkali metals",
+  "alkaline_earth_metal": "Alkaline earth metal",
+  "transition_metal": "Transition metal",
+  "noble_gas": "Noble gas",
+  "lanthanide": "Lanthanide",
+  "actinide": "Actinide",
+  "semimetal": "Semimetal",
+  "post_transition_metal": "Post transition metal",
+  "halogen": "Halogen"
+}

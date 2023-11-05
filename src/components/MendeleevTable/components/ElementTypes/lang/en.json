@@ -1,0 +1,14 @@
+{
+  "Element types": "Element types",
+
+  "nonmetal": "Nonmetal",
+  "alkali_metals": "Alkali metals",
+  "alkaline_earth_metal": "Alkaline earth metal",
+  "transition_metal": "Transition metal",
+  "noble_gas": "Noble gas",
+  "lanthanide": "Lanthanide",
+  "actinide": "Actinide",
+  "semimetal": "Semimetal",
+  "post_transition_metal": "Post transition metal",
+  "halogen": "Halogen"
+}

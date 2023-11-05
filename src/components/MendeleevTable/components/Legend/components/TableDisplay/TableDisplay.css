@@ -1,0 +1,92 @@
+
+:root{
+    --table-display-data-padding: 8px;
+}
+
+.table-display{
+    position: relative;
+}
+
+.table-display-data{
+    width: calc(var(--element-size) * var(--legend-scale) * 0.8);
+    height: calc(var(--element-size) * var(--legend-scale) * 0.8);
+    background: #151515;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    color: #aaa;
+    padding: var(--table-display-data-padding);
+}
+.table-display-data:hover{
+    background: #181818;
+}
+
+.table-display-img{
+    width: 50%;
+    height: 50%;
+    object-fit: contain;
+    pointer-events: none;
+}
+
+.table-display-name{
+    margin-top: 8px;
+    font-size: 11px;
+    text-align: center;
+    pointer-events: none;
+}
+
+
+
+
+
+.table-display-menu{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: calc(calc(var(--element-size) * var(--legend-scale) * 0.8 + var(--table-display-data-padding) * 2) * 3);
+    height: calc(calc(var(--element-size) * var(--legend-scale) * 0.8 + var(--table-display-data-padding) * 2) * 3);
+    background: #151515;
+    border-radius: 8px;
+    top: calc(-1 * calc(var(--element-size) * var(--legend-scale) * 0.8 + var(--table-display-data-padding) * 2));
+    left: calc(-1 * calc(var(--element-size) * var(--legend-scale) * 0.8 + var(--table-display-data-padding) * 2));
+    z-index: 1;
+}
+
+.table-display-data-item{
+    width: calc(var(--element-size) * var(--legend-scale) * 0.8);
+    height: calc(var(--element-size) * var(--legend-scale) * 0.8);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    color: #cccf;
+    padding: var(--table-display-data-padding);
+}
+
+.table-display-data-item:hover{
+    background: #000a;
+}
+
+.table-display-data-item-space{
+    width: calc(var(--element-size) * var(--legend-scale) * 0.8);
+    height: calc(var(--element-size) * var(--legend-scale) * 0.8);
+    padding: var(--table-display-data-padding);
+}
+
+
+.table-display:not([open]) .table-display-menu{
+    display: none;
+}
+.table-display[open] .table-display-menu{
+    animation: fade-in 200ms forwards, scale-down 200ms forwards;
+}
+.table-display[closing] .table-display-menu{
+    display: block;
+    pointer-events: none;
+    animation: fade-out 200ms forwards, scale-up 200ms forwards;
+}

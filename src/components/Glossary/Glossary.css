@@ -1,0 +1,29 @@
+
+.glossary-table{
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.glossary-table td{
+    padding: 5px 0;
+}
+
+.glossary-table a{
+    color: var(--gray-1);
+    text-decoration: none;
+}
+.glossary-table a:hover{
+    color: var(--gray-3);
+}
+
+
+/* Dark theme */
+.theme-dark>* .glossary-table a{
+    color: var(--gray-12);
+    text-decoration: none;
+}
+
+.theme-dark>* .glossary-table a:hover{
+    color: var(--gray-14);
+}
+/* End dark theme */

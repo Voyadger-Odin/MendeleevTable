@@ -1,0 +1,14 @@
+{
+  "Element types": "Типы элементов",
+
+  "nonmetal": "Неметалл",
+  "alkali_metals": "Щёлочные металлы",
+  "alkaline_earth_metal": "Щелочноземельный металл",
+  "transition_metal": "Переходный металл",
+  "noble_gas": "Благородный газ",
+  "lanthanide": "Лантаноид",
+  "actinide": "Актиноид",
+  "semimetal": "Полуметалл",
+  "post_transition_metal": "Пост-переходный металл",
+  "halogen": "Галоген"
+}

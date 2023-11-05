@@ -1,0 +1,61 @@
+
+
+.temperature-mode{
+    padding: 5px;
+    cursor: pointer;
+    position: relative;
+    margin-right: 10px;
+}
+
+.temperature-mode-name{
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.temperature-mode-select{
+    width: auto;
+    position: absolute;
+    top: 30px;
+    left: -5px;
+
+    background: var(--gray-12);
+
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+
+.temperature-mode-select-item{
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 25px;
+    padding: 5px 10px;
+}
+
+.temperature-mode-select-item:hover{
+    background: var(--gray-11);
+}
+
+
+.temperature-mode:not([open]) .temperature-mode-select{
+    display: none;
+}
+.temperature-mode[open] .temperature-mode-select{
+    animation: fade-in 200ms forwards, slide-in 200ms forwards;
+}
+
+.temperature-mode[closing] .temperature-mode-select{
+    display: block;
+    pointer-events: none;
+    animation: fade-out 200ms forwards, slide-out 200ms forwards;
+}
+
+/* Dark theme */
+.theme-dark>* .temperature-mode-select{
+    background: var(--gray-2)
+}
+
+.theme-dark>* .temperature-mode-select-item:hover{
+    background: var(--gray-4);
+}
+/* End dark theme */

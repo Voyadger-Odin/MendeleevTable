@@ -1,0 +1,398 @@
+
+:root{
+    --background-color: black;
+    --text-color: #eee;
+    --element-size: 75px;
+    --element-padding: 5px;
+    --element-real: calc(var(--element-size) + var(--element-padding) * 2);
+    --border-radius: 5px;
+    --legend-scale: 1.5;
+    --table-padding: 15px;
+
+
+
+    --color-nonmetal: #79ad26;
+    --color-nonmetal-hover: #6c9a24;
+
+    --color-alkali-metal: #d04949;
+    --color-alkali-metal-hover: #c54646;
+
+    --color-alkaline-earth-metal: #da9211;
+    --color-alkaline-earth-metal-hover: #c78713;
+
+    --color-transition-metal: #60b9de;
+    --color-transition-metal-hover: #7ab0c7;
+
+    --color-noble-gas: #e889d5;
+    --color-noble-gas-hover: #e377cd;
+
+    --color-lanthanide: #85cbb0;
+    --color-lanthanide-hover: #85cbb0;
+
+
+
+
+    --numbers-top-size: 15px;
+    --numbers-left-size: 15px;
+
+}
+
+
+
+/* Fonts */
+@font-face {
+    font-family: "SF UI Text";
+    font-weight: 300;
+    src: url("./fonts/SanFrancisco/SFUIText-Light.ttf");
+}
+
+@font-face {
+    font-family: "SF UI Text";
+    font-weight: 400;
+    src: url("./fonts/SanFrancisco/SFUIText-Regular.ttf");
+}
+
+@font-face {
+    font-family: "SF UI Text";
+    font-weight: 500;
+    src: url("./fonts/SanFrancisco/SFUIText-Medium.ttf");
+}
+
+@font-face {
+    font-family: "SF UI Text";
+    font-weight: 700;
+    src: url("./fonts/SanFrancisco/SFUIText-Bold.ttf");
+}
+
+@font-face {
+    font-family: "JetBrainsMono";
+    font-weight: 400;
+    src: url("./fonts/JetBrainsMono-2.304/fonts/ttf/JetBrainsMono-Regular.ttf");
+}
+/* End fonts */
+
+
+body {
+    background: var(--background-color);
+    color: var(--text-color);
+    font-family: "SF UI Text";
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.header-title{
+    font-weight: 800;
+    font-size: 30px;
+}
+
+.main-content{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 80vw;
+    margin: auto;
+}
+
+
+
+
+
+
+.table{
+    width: calc(var(--element-real) * 18);
+    position: relative;
+    padding: var(--table-padding);
+}
+
+.elements{
+    position: relative;
+}
+
+.element{
+    width: var(--element-size);
+    height: var(--element-size);
+    color: var(--text-color);
+    font-family: "SF UI Text";
+    padding: var(--element-padding);
+    transition: .3s;
+}
+
+/* Table space */
+.cell-space-10{
+    width: calc(var(--element-real) * 10);
+}
+.cell-space-16{
+    width: calc(var(--element-real) * 16);
+}
+/* End table space */
+
+.row{
+    display: flex;
+    flex-direction: row;
+}
+
+.row-element{
+    justify-content: space-between;
+}
+
+.container{
+
+}
+
+.symbol{
+    font-size: calc(var(--element-size) * 0.45);
+    font-weight: 800;
+}
+
+.number{
+
+}
+
+.weight{
+    font-size: 10px;
+    color: black;
+}
+
+.name{
+    font-size: 13px;
+}
+
+/* Numbers */
+.numbers{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: #777;
+    font-size: 10px;
+    z-index: -1;
+}
+
+.numbers-top{
+    position: absolute;
+    width: var(--element-real);
+    height: var(--numbers-top-size);
+    display: flex;
+    justify-content: center;
+}
+
+.numbers-left{
+    position: absolute;
+    width: var(--numbers-left-size);
+    height: var(--element-real);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* End numbers */
+
+/* Legend */
+.legend{
+    position: absolute;
+    width: calc(var(--element-real) * 10 - var(--element-padding) * 10 * 2);
+    height: calc(var(--element-real) * 2);
+    top: calc(var(--element-real) * 1 + var(--table-padding));
+    left: calc(var(--element-real) * 2 + var(--table-padding));
+    padding: 0 calc(var(--element-padding) * 10);
+}
+.legend-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.legend-block{
+    display: flex;
+    flex-direction: row;
+}
+
+.element-legend{
+    width: calc(var(--element-size) * var(--legend-scale));
+    height: calc(var(--element-size) * var(--legend-scale));
+}
+
+.element-legend>* .symbol{
+    font-size: calc(var(--element-size) * 0.45 * var(--legend-scale));
+    font-weight: 800;
+}
+
+.legend-description{
+    margin-left: 10px;
+    font-size: 14px;
+}
+
+.legend-description>table{
+    border-collapse: collapse;
+    color: #aaa;
+}
+.legend-description>table>tbody>tr>td{
+    padding-top: 5px;
+}
+.legend-element-value{
+    padding-left: 20px;
+}
+
+
+/* Legend explanation */
+.legend-explanation{
+    margin-right: 60px;
+    position: relative;
+}
+
+.legend-explanation>table{
+    border-collapse: collapse;
+    text-align: end;
+    font-size: 15px;
+}
+.legend-explanation>table>tbody>tr>td{
+    padding: 5px 0;
+}
+
+.legend-explanation-canvas{
+    position: absolute;
+    top: -10px;
+    left: 100%;
+}
+/* End legend explanation */
+
+/* Table display */
+.table-display{
+    width: calc(var(--element-size) * var(--legend-scale) * 0.8);
+    height: calc(var(--element-size) * var(--legend-scale) * 0.8);
+    background: #111;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    color: #aaa;
+    margin-top: calc(var(--element-padding) * 5);
+    padding: 5px;
+}
+.table-display:hover{
+    background: #151515;
+}
+
+.table-display-img{
+    width: 50%;
+    height: 50%;
+    object-fit: contain;
+}
+
+.table-display-name{
+    font-size: 13px;
+}
+/* End table display */
+/* End legend */
+
+/* Border radius */
+.br{
+    border-radius: var(--border-radius);
+}
+.br-top-left{
+    border-radius: var(--border-radius) 0 0 0;
+}
+.br-top-right{
+    border-radius: 0 var(--border-radius) 0 0;
+}
+.br-top-left-right{
+    border-radius: var(--border-radius) var(--border-radius) 0 0;
+}
+.br-bottom-left{
+    border-radius: 0 0 0 var(--border-radius);
+}
+.br-bottom-right{
+    border-radius: 0 0 var(--border-radius) 0;
+}
+/* End border radius */
+
+
+/* Element types */
+.nonmetal{
+    background: var(--color-nonmetal);
+    cursor: pointer;
+}
+.nonmetal:hover{
+    background: var(--color-nonmetal-hover);
+}
+
+.alkali-metal{
+    background: var(--color-alkali-metal);
+    cursor: pointer;
+}
+.alkali-metal:hover{
+    background: var(--color-alkali-metal-hover);
+}
+
+.alkali-earth-metal{
+    background: var(--color-alkaline-earth-metal);
+    cursor: pointer;
+}
+.alkali-earth-metal:hover{
+    background: var(--color-alkaline-earth-metal-hover);
+}
+
+.transition-metal{
+    background: var(--color-transition-metal);
+    cursor: pointer;
+}
+.transition-metal:hover{
+    background: var(--color-transition-metal-hover);
+}
+
+.noble-gas{
+    background: var(--color-noble-gas);
+    cursor: pointer;
+}
+.noble-gas:hover{
+    background: var(--color-noble-gas-hover);
+}
+
+.lanthanide{
+    background: var(--color-lanthanide);
+    cursor: pointer;
+}
+.lanthanide:hover{
+    background: var(--color-lanthanide-hover);
+}
+
+
+
+
+
+.nonmetal-span{
+    color: var(--color-nonmetal);
+}
+/* End element types */
+
+
+
+.table-down-info{
+
+}
+
+.glossary-table{
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.glossary-table td{
+    padding: 5px 0;
+}
+
+.glossary-table a{
+    color: #ddd;
+    text-decoration: none;
+}
+.glossary-table a:hover{
+    color: #fff;
+}

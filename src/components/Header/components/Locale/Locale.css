@@ -1,0 +1,60 @@
+
+
+.locale{
+    padding: 5px;
+    cursor: pointer;
+    position: relative;
+}
+
+.local-name{
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.locale-select{
+    width: auto;
+    position: absolute;
+    top: 30px;
+    left: -5px;
+
+    background: var(--gray-12);
+
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+
+.locale-select-item{
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 25px;
+    padding: 5px 10px;
+}
+
+.locale-select-item:hover{
+    background: var(--gray-11);
+}
+
+
+.locale:not([open]) .locale-select{
+    display: none;
+}
+.locale[open] .locale-select{
+    animation: fade-in 200ms forwards, slide-in 200ms forwards;
+}
+
+.locale[closing] .locale-select{
+    display: block;
+    pointer-events: none;
+    animation: fade-out 200ms forwards, slide-out 200ms forwards;
+}
+
+/* Dark theme */
+.theme-dark>* .locale-select{
+    background: var(--gray-2)
+}
+
+.theme-dark>* .locale-select-item:hover{
+    background: var(--gray-4);
+}
+/* End dark theme */

@@ -1,0 +1,34 @@
+{
+  "Density_dimension": "г/л",
+
+  "number": "Номер",
+  "symbol": "Символ",
+  "name": "Название",
+  "series": "Категория",
+  "period": "Период",
+  "group": "Группа",
+
+  "mass": "Масса",
+  "E-negativity": "Электроотрицательность",
+  "Atomic radius": "Атомный радиус",
+  "Half-life period": "Период полураспада",
+  "Abundance in Earth crust": "Содержание в земной коре",
+  "Abundance in Universe": "Содержание во Вселенной",
+
+  "Atomic weight": "Атомный вес",
+  "Melting point": "Температура плавления",
+  "Boiling point": "Температура кипения",
+  "Half-life": "Период полураспада",
+  "Density": "Плотность",
+
+  "nonmetal": "Неметалл",
+  "alkali_metals": "Щёлочные металлы",
+  "alkaline_earth_metal": "Щелочноземельный металл",
+  "transition_metal": "Переходный металл",
+  "noble_gas": "Благородный газ",
+  "lanthanide": "Лантаноид",
+  "actinide": "Актиноид",
+  "semimetal": "Полуметалл",
+  "post_transition_metal": "Пост-переходный металл",
+  "halogen": "Галоген"
+}
